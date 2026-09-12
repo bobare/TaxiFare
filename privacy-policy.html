@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Fare Calculator</title>
+<style>
+  :root {
+    --accent: #FF9800;
+    --accent-dark: #C6720A;
+    --bg: #FFFDF9;
+    --ink: #1B1B1B;
+    --ink-soft: #5B5148;
+    --rule: #EDE0CC;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    padding: 56px 24px 40px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .header-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .mark {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mark svg { width: 24px; height: 24px; }
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    margin-top: 4px;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px 24px 96px;
+  }
+  .lede {
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    margin-bottom: 36px;
+  }
+  nav.toc {
+    background: #FFF4E0;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 44px;
+  }
+  nav.toc p {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  nav.toc ol {
+    margin: 0;
+    padding-left: 20px;
+    columns: 2;
+    column-gap: 24px;
+  }
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+  nav.toc a { color: var(--ink); text-decoration: none; border-bottom: 1px solid transparent; }
+  nav.toc a:hover { border-bottom-color: var(--accent); }
+  section {
+    padding-top: 32px;
+    margin-top: 32px;
+    border-top: 1px solid var(--rule);
+    scroll-margin-top: 24px;
+  }
+  section:first-of-type { border-top: none; margin-top: 0; }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 14px;
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+  }
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 22px 0 8px;
+  }
+  p { margin: 0 0 14px; max-width: 62ch; }
+  ul, ol.plain { margin: 0 0 14px; padding-left: 22px; max-width: 62ch; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent-dark); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th { font-weight: 600; color: var(--ink-soft); width: 30%; }
+  .callout {
+    background: #FFF4E0;
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 0.95rem;
+    margin: 0 0 14px;
+  }
+  footer {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 24px 64px;
+    color: var(--ink-soft);
+    font-size: 0.88rem;
+  }
+  footer a { color: var(--accent-dark); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 15l1-5a2 2 0 0 1 2-1.5h10A2 2 0 0 1 19 10l1 5" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="3" y="15" width="18" height="4" rx="1.2" stroke="white" stroke-width="1.6"/>
+        <circle cx="7.5" cy="19" r="1.3" fill="white"/>
+        <circle cx="16.5" cy="19" r="1.3" fill="white"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Privacy Policy</h1>
+      <div class="meta">Fare Calculator · Last updated 12 September 2026</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <p class="lede">
+    Fare Calculator is a trip-fare and trip-tracking app built for individual drivers.
+    This page explains, in plain terms, what information the app touches, why, and what
+    control you have over it.
+  </p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#overview">1. Overview</a></li>
+      <li><a href="#location">2. Location data</a></li>
+      <li><a href="#trip-data">3. Trip &amp; pricing data</a></li>
+      <li><a href="#ads">4. Advertising</a></li>
+      <li><a href="#billing">5. Purchases (Remove Ads)</a></li>
+      <li><a href="#maps">6. Maps &amp; places search</a></li>
+      <li><a href="#storage">7. Storage &amp; retention</a></li>
+      <li><a href="#sharing">8. Data sharing</a></li>
+      <li><a href="#permissions">9. Permissions</a></li>
+      <li><a href="#children">10. Children's privacy</a></li>
+      <li><a href="#choices">11. Your choices</a></li>
+      <li><a href="#security">12. Security</a></li>
+      <li><a href="#changes">13. Changes to this policy</a></li>
+      <li><a href="#contact">14. Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="overview">
+    <h2>1. Overview</h2>
+    <p>
+      Fare Calculator helps a driver estimate, track, and record taxi trips: fares,
+      distances, durations, and income. It is built around a single principle —
+      your trip history is yours, it lives on your device, and we don't run a server
+      that collects it.
+    </p>
+    <p>
+      The only data that leaves your device goes to the specific Google services the
+      app relies on to function (Maps, Places, Directions, AdMob, and Play Billing),
+      each covered below.
+    </p>
+  </section>
+
+  <section id="location">
+    <h2>2. Location data</h2>
+    <p>The app uses your device's GPS location for two things only:</p>
+    <ul>
+      <li>Letting you set your current position as a trip's start point, instead of typing an address.</li>
+      <li>Tracking distance covered while you have an active trip open in the app.</li>
+    </ul>
+    <p>
+      Location is only accessed while the app is open and in use on your screen —
+      it does not track your location in the background, and it does not run after
+      you close the app or switch to another one.
+    </p>
+    <p>
+      Your location is used entirely on-device to calculate distance and to look up
+      addresses (see <a href="#maps">Maps &amp; places search</a>). We do not log,
+      store, or transmit your raw location history to any server we operate.
+    </p>
+  </section>
+
+  <section id="trip-data">
+    <h2>3. Trip &amp; pricing data</h2>
+    <p>The app stores the following on your device only, in a local database:</p>
+    <ul>
+      <li>Start, destination, and stop addresses for each trip</li>
+      <li>Distance covered, time taken, and any waiting time you record</li>
+      <li>Estimated and actual fares, including your pricing settings (base price, cost per km, cost per minute, peak multiplier, minimum fare, waiting rate, fuel price and consumption)</li>
+      <li>Your currency, theme, and other app preferences</li>
+      <li>Saved favorite routes you choose to name and store</li>
+    </ul>
+    <p>
+      None of this is uploaded to a server we control. If you use the app's own
+      export feature to generate a CSV of your trips, that file is created on your
+      device and only shared to wherever you explicitly choose to send it (e.g. your
+      own email or cloud storage) — we never see it.
+    </p>
+  </section>
+
+  <section id="ads">
+    <h2>4. Advertising</h2>
+    <p>
+      The app shows ads served by <strong>Google AdMob</strong>. AdMob may collect
+      device identifiers, approximate location, and usage data to serve and measure
+      ads, and to limit how often you see the same ad. This data collection is
+      governed by Google's own privacy policy, not ours:
+    </p>
+    <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+    <p>
+      You can remove ads entirely at any time — see
+      <a href="#billing">Purchases</a> below.
+    </p>
+  </section>
+
+  <section id="billing">
+    <h2>5. Purchases (Remove Ads)</h2>
+    <p>
+      "Remove Ads" is a one-time purchase, processed entirely by
+      <strong>Google Play Billing</strong>, that turns off ads for 365 days. We never
+      see or store your payment details — card numbers, billing address, and payment
+      method are handled directly between you and Google Play. The app only receives
+      confirmation that a purchase was completed, which it uses to unlock the ad-free
+      period locally on your device.
+    </p>
+    <p>
+      Refunds, payment methods, and receipts for this purchase are managed through
+      your Google Play account, not through this app.
+    </p>
+  </section>
+
+  <section id="maps">
+    <h2>6. Maps &amp; places search</h2>
+    <p>
+      Route calculation, address search, and map display are powered by
+      <strong>Google Maps Platform</strong> (Maps SDK, Places API, Directions API).
+      When you search for an address or calculate a route, the relevant text or
+      coordinates are sent to Google to perform that lookup. This is subject to
+      Google's privacy policy (linked above) and their
+      <a href="https://cloud.google.com/maps-platform/terms" target="_blank" rel="noopener">Maps Platform Terms of Service</a>.
+    </p>
+  </section>
+
+  <section id="storage">
+    <h2>7. Storage &amp; retention</h2>
+    <table>
+      <tr><th>What</th><td>Where it lives</td></tr>
+      <tr><td>Trip history, pricing settings, favorites, theme/currency preferences</td><td>Local database on your device only</td></tr>
+      <tr><td>Ad-free purchase status</td><td>Local device storage + Google Play (for purchase validation)</td></tr>
+      <tr><td>Location, search queries, route requests</td><td>Processed on-device and via Google's services in real time — not retained by us</td></tr>
+    </table>
+    <p>
+      Uninstalling the app permanently deletes all locally stored data. We have no
+      copy of it and cannot recover it for you.
+    </p>
+  </section>
+
+  <section id="sharing">
+    <h2>8. Data sharing</h2>
+    <p>
+      We do not sell your data, and we do not share it with third parties beyond
+      what's required to run the services above (Google Maps Platform, AdMob, Play
+      Billing). We have no analytics SDK, crash reporter, or advertising network
+      besides AdMob integrated into this app.
+    </p>
+  </section>
+
+  <section id="permissions">
+    <h2>9. Permissions</h2>
+    <table>
+      <tr><th>Permission</th><td>Why it's requested</td></tr>
+      <tr><td>Location (fine)</td><td>Set current location as a trip start point; track distance during an active trip</td></tr>
+      <tr><td>Internet</td><td>Maps, route calculation, ads, and purchase verification</td></tr>
+    </table>
+    <p>
+      You can review or revoke any permission at any time from your device's
+      Settings → Apps → Fare Calculator → Permissions. Revoking location access
+      simply disables the GPS-based features; the rest of the app continues to work.
+    </p>
+  </section>
+
+  <section id="children">
+    <h2>10. Children's privacy</h2>
+    <p>
+      This app is intended for adult drivers managing their own trips and pricing.
+      It is not directed at children, and we do not knowingly collect personal
+      information from anyone under the age of 13 (or the relevant minimum age in
+      your region).
+    </p>
+  </section>
+
+  <section id="choices">
+    <h2>11. Your choices</h2>
+    <ul>
+      <li><strong>Export your data</strong> — use the CSV export in Analytics at any time.</li>
+      <li><strong>Delete your data</strong> — uninstall the app; local storage is removed with it.</li>
+      <li><strong>Remove ads</strong> — a one-time purchase via Settings, processed by Google Play.</li>
+      <li><strong>Control location access</strong> — grant or revoke it from your device's system settings.</li>
+    </ul>
+  </section>
+
+  <section id="security">
+    <h2>12. Security</h2>
+    <p>
+      Your trip and pricing data is stored in your device's app-private storage,
+      which is sandboxed by Android from other apps. Network requests to Google's
+      services (Maps, Directions, Places, AdMob, Play Billing) are made over HTTPS.
+      No system is perfectly secure, but we don't operate a central server holding
+      your data, which removes an entire category of risk (a server-side breach)
+      that many apps carry.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2>13. Changes to this policy</h2>
+    <p>
+      If this policy changes, the "Last updated" date at the top of this page will
+      change accordingly. Material changes — anything that changes what data we
+      collect or how it's used — will also be reflected in the in-app Privacy Policy
+      screen's version.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>14. Contact</h2>
+    <p>
+      Questions about this policy or the app can be directed to the developer via
+      GitHub:
+    </p>
+    <p><a href="https://github.com/bobare" target="_blank" rel="noopener">github.com/bobare</a></p>
+  </section>
+</main>
+
+<footer>
+  Fare Calculator — a personal project by Benson Obare. This policy is published at
+  <a href="https://bobare.github.io/taxifare/">bobare.github.io/taxifare</a> and linked
+  from within the app.
+</footer>
+
+</body>
+</html>
